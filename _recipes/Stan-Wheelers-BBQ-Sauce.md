@@ -24,7 +24,7 @@ directions:
 - Heat a medium saucepan over medium-high heat. Add the oil, followed by the onion. Saute until translucent, about 3 minutes. Add the garlic and cook until fragrant, about 30 seconds.
 - Add the tomato paste, ketchup, Worcestershire sauce, allspice, black pepper, tabasco, vinegar, brown sugar, orange supremes and juices, and the bay leaf; stir to combine. Bring to a boil; reduce heat and cook at a simmer, stirring occasionally, until thickened slighlty and flavors have married well, about 20 minutes.
 - Remove from heat.
--Sauce can be stored in the refrigerator in a sealed container for up to a week, or frozen for up to 3 months.
+- Sauce can be stored in the refrigerator in a sealed container for up to a week, or frozen for up to 3 months.
 
 ---
 
