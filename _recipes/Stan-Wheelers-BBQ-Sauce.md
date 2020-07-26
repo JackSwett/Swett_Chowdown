@@ -2,7 +2,6 @@
 
 layout: recipe
 title: "Stan Wheeler's BBQ Sauce"
-image: stan-wheelers-bbq-sauce.jpeg
 tags: sauce, BBQ
 
 ingredients:
