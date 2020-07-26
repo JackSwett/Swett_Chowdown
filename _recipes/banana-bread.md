@@ -29,4 +29,4 @@ directions:
 
 ---
 
-This recipe came from Oma sometime in the 1980's. Although it was probably developed with Crisco in mind, Mama uses Spectrum brand vegetable shortening (no trans fats). Both Mama and Oma like to add at least 1 cup of chopped walnuts in the end, but it's also quite good without!
+This recipe came from Oma sometime in the 1980's. Although it was probably developed with Crisco in mind, Mama uses Spectrum brand vegetable shortening (no trans fats). Both Mama and Oma like to add at least 1 cup of chopped walnuts in the end, but it's also quite good without! test!
