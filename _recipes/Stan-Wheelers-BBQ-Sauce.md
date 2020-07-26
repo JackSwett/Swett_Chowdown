@@ -13,7 +13,7 @@ ingredients:
 - 1 cup ketchup
 - 1/4 cup Worcestershire sauce
 - 1/2 teaspoon ground allspice
--1/2 teaspoon freshly ground black pepper 
+- 1/2 teaspoon freshly ground black pepper 
 - 1/2-1 1/2 teaspoon tabasco sauce
 - 1/3 cups apple cider vinegar
 - 3 tablespoons dark brown sugar
