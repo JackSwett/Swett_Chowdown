@@ -3,6 +3,7 @@
 layout: recipe
 title:  "Icebox Cinnamon-Nut Sticky Buns"
 image: CinnamonBun.jpeg
+tags: breakfast, dessert
 yield: "18-20 buns"
 
 ingredients:
