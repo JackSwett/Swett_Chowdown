@@ -17,7 +17,7 @@ ingredients:
 - 1/2-1 1/2 teaspoon tabasco sauce
 - 1/3 cups apple cider vinegar
 - 3 tablespoons dark brown sugar
-- 1 orange, cut into [supremes](marthastewart.com/1512359/supreming-citrus), reserve juices
+- 1 orange, cut into [supremes](https://www.marthastewart.com/1512359/supreming-citrus), reserve juices
 - 1 Turkish bay leaf (or 1/2 California bay leaf)
 
 directions:
