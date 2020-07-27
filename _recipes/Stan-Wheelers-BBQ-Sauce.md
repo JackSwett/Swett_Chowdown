@@ -2,7 +2,7 @@
 
 layout: recipe
 title:  "Stan Wheeler's BBQ Sauce"
-image: crispy-carrots.jpg
+image: stan-wheelers-bbq-sauce.jpeg
 tags: sauce, BBQ
 
 ingredients:
