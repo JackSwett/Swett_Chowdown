@@ -1,8 +1,8 @@
 ---
 
-layout: component
+layout: recipe
 title: "Vegan Seitan and Mushroom Ragu Bolognese"
-image:
+image: 
 tags: vegan, pasta, sauce
 yield: "about 2 quarts"
 
