@@ -2,7 +2,7 @@
 
 layout: component
 title: "Vegan Seitan and Mushroom Ragu Bolognese"
-image: 
+image:
 tags: vegan, pasta, sauce
 yield: "about 2 quarts"
 
@@ -28,15 +28,13 @@ ingredients:
 - Freshly grated nutmeg
 
 directions:
-- Heat a dutch oven or other large, heavy-bottomed saucepan over medium-high heat. When the pan is hot, add the olive oil; heat until shimmering. Add the onion, carrot, and celery; cook, stirring and scraping frequently, until the onion is just beginning to turn golden, about 7 minutes. Add the garlic and cook until fragrant, about 1 minute more. 
-- Add the mushrooms and seitan; cook, stirring and scraping frequently, until the water in the mushrooms and seitan evaporates and a light brown film begins to develop on the bottom of the pot, about x minutes. 
-- Stir in the tomato paste and cook for 30 seconds. Add the wine, scraping up any browned bits from the bottom of the pot, and bring to a boil. Reduce the heat and simmer until the wine has nearly evaporated and no longer smells of alcohol, about 5 minutes. 
--Stir in the pureed tomatoes, miso, coconut oil, soy sauce, bay leaf, sage, and rosemary; bring the mixture back to a simmer and cook until the sauce has reduced and thickened, about 30 minutes. 
-- Discard the bay leaf. Season to taste with salt and freshly ground black pepper. Stir in a few scrapings of nutmeg. 
+- Heat a dutch oven or other large, heavy-bottomed saucepan over medium-high heat. When the pan is hot, add the olive oil. Heat until shimmering. Add the onion, carrot, and celery. Cook, stirring and scraping frequently, until the onion is just beginning to turn golden, about 7 minutes. Add the garlic and cook until fragrant, about 1 minute more.
+- Add the mushrooms and seitan. Cook, stirring and scraping frequently, until the water in the mushrooms and seitan evaporates and a light brown film begins to develop on the bottom of the pot, about x minutes.
+- Stir in the tomato paste and cook for 30 seconds. Add the wine, scraping up any browned bits from the bottom of the pot, and bring to a boil. Reduce the heat and simmer until the wine has nearly evaporated and no longer smells of alcohol, about 5 minutes.
+-Stir in the pureed tomatoes, miso, coconut oil, soy sauce, bay leaf, sage, and rosemary. Bring the mixture back to a simmer and cook until the sauce has reduced and thickened, about 30 minutes.
+- Discard the bay leaf. Season to taste with salt and freshly ground black pepper. Stir in a few scrapings of nutmeg.
 - At this point, the sauce can be refrigerated in a tighly sealed container for about a week or frozen for up to 3 months. Reheat before proceeding to make Vegan Lasagna alla Bolognese.
 
 ---
 
-The hand-crumbled mushrooms and seitan help create the perfect bolognese texture in this vegan red sauce. Use it to create a Vegan Lasagna alla Bolgnese or top cooked penne on a busy night. Recipe adapted from seriouseats.com 
-
-
+The hand-crumbled mushrooms and seitan help create the perfect bolognese texture in this vegan red sauce. Use it to create a Vegan Lasagna alla Bolgnese or top cooked penne on a busy night. Recipe adapted from seriouseats.com
