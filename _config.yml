@@ -1,6 +1,6 @@
 # Site settings
 title: Swett Family Recipes
-email: no-reply@swett-family.com
+email: no-reply@swett.org
 description: The plain text recipe database for hackers
 baseurl: "https://recipes.swett.org"
 language: "en"
