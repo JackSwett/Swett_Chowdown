@@ -19,10 +19,10 @@ ingredients:
 - ¹/₂ cup bread crumbs
 
 directions:
-- Preheat the over to 400 degrees F. Bring a large pot of water to a boil.
+- Preheat the oven to 400 degrees F. Bring a large pot of water to a boil.
 - Cook the milk with the bay leaves in a small saucepan over medium-low heat. When small bubbles appear along the sides, about 5 minutes later, turn off the heat and let stand. Salt the boiling water and cook pasta to the point where it still needs another minute or two to become tender. Drain it, rinse it quickly to stop cooking, and place it in a large bowl.
 - In a small saucepan over medium-low heat, melt 3 tablespoons of the butter, when it is foamy, add the flour and cook, stirring, until the mixture browns, about 5 minutes. Remove the bay leaves from the milk and add about 1/4 cup of the milk to the hot flour mixture. As soon as the mixture becomes smooth, add a little more milk, and continue to do so until all the milk is used up and the mixture is thick and smooth. Add the Cheddar or Emmenthal and stir.
-- Pour the sauce over the noodles, toss in the Parmesan, and season with salt and pepper. Use the remaining butter to grease a 9x13-inch or like-sized baking pan and turn the noodle mixture into it. Top liberally  with bread crumbs and bake until the crumbs turn brown, about 15 minutes. Serve hot.
+- Pour the sauce over the noodles, toss in the Parmesan, and season with salt and pepper. Use the remaining butter to grease a 9x13-inch or like-sized baking pan and turn the noodle mixture into it. Top liberally with bread crumbs and bake until the crumbs turn brown, about 15 minutes. Serve hot.
 
 ---
 

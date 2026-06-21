@@ -12,7 +12,7 @@ ingredients:
 - 1 large carrot (about 8 oz/225 grams), finely minced
 - 3 ribs celery (about 6 oz/170 grams), finely minced
 - 5 medium cloves of garlic, finely minced (about x tablespoons)
-- 1 lb. (450 grams) cemini mushrooms, stems discarded and caps crumbled by hand into pea-size morsels
+- 1 lb. (450 grams) cremini mushrooms, stems discarded and caps crumbled by hand into pea-size morsels
 - 1 lb. (450 grams) seitan, drained and crumbled by hand into pea-size morsels
 - 1 tablespoon (15 ml) tomato paste
 - 1-1/2 cups (355 ml) dry red wine
@@ -37,4 +37,4 @@ directions:
 
 ---
 
-The hand-crumbled mushrooms and seitan help create the perfect bolognese texture in this vegan red sauce. Use it to create a Vegan Lasagna alla Bolgnese or top cooked penne on a busy night. Recipe adapted from seriouseats.com
+The hand-crumbled mushrooms and seitan help create the perfect bolognese texture in this vegan red sauce. Use it to create a Vegan Lasagna alla Bolognese or top cooked penne on a busy night. Recipe adapted from seriouseats.com

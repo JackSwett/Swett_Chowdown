@@ -19,4 +19,4 @@ directions:
 
 ---
 
-The recipe is best when using farine the ble noir from Brittany, or elsewhere in France. If you are using American buckwheat flour, results can be improved by substituting the flour with a  50/50 mix of buckwheat and all-purpose flour.
+The recipe is best when using farine de blé noir from Brittany, or elsewhere in France. If you are using American buckwheat flour, results can be improved by substituting the flour with a 50/50 mix of buckwheat and all-purpose flour.

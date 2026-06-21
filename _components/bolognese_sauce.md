@@ -33,6 +33,6 @@ notes:
 Ragù is not to be confused with ragoût. A ragoût is a French meat stew, while ragù is Bologna's meat sauce for seasoning its homemade pasta. The only thing they share is a common and justified origin in the verb ragoût, which means "to excite the appetite."
 
 A properly made ragù clinging to the folds of homemade noodles is one of the most satisfying experiences accessible to the sense of taste. It is no doubt one of the great attractions of the enchanting city of Bologna, and the Bolognese claim one cannot make a true ragù anywhere else. This may be so, but with a little care, we can come very close to it. There are three essential points you must remember to make a successful ragù:
-- The meat must be sautéed just barely long enough to lsoe its raw color. It must not brown or it will lose delicacy.
+- The meat must be sautéed just barely long enough to lose its raw color. It must not brown or it will lose delicacy.
 - It must be cooked in milk before the tomatoes are added. This keeps the meat creamier and sweeter tasting.
 - It must cook at the merest simmer for a long, long time. The minimum is 3-1/2 hours; 5 is better.

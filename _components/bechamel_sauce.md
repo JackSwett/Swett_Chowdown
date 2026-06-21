@@ -22,6 +22,6 @@ notes:
 
 ---
 
-Long before the French christened it "béchamel," a sauce of flour and milk cooked in butter, called balsamella, was  apart of the cooking of Romagna. It is essential to many of its pastas and vegetables, and such an unquestionably native dish as lasagne could not exist without it.
+Long before the French christened it "béchamel," a sauce of flour and milk cooked in butter, called balsamella, was a part of the cooking of Romagna. It is essential to many of its pastas and vegetables, and such an unquestionably native dish as lasagne could not exist without it.
 
-Balsamella is possibly the simplest and most quickly made of sauces. The only problem it poses is the formation of lumps. If you add the milk as directed, a little bit at a time, off the ehat, beating the sauce constantly with a wooden spoon, you should have absolutely no difficulty in producing a perfectly smooth balsamella every time.
+Balsamella is possibly the simplest and most quickly made of sauces. The only problem it poses is the formation of lumps. If you add the milk as directed, a little bit at a time, off the heat, beating the sauce constantly with a wooden spoon, you should have absolutely no difficulty in producing a perfectly smooth balsamella every time.

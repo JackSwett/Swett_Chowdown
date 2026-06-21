@@ -17,7 +17,7 @@ ingredients:
 - 2-¹/₂ sticks unsalted butter, cut into 1-inch cubes, at room temperature
 
 directions:
-- Combine the water and yeast in a small bowl. Let stand for 10 minutes, then stir until the yeast is completely dissolved. Set Aside.
+- Combine the water and yeast in a small bowl. Let stand for 10 minutes, then stir until the yeast is completely dissolved. Set aside.
 - Sift together the flours, sugar and salt into the bowl of a stand mixer fitted with the dough hook. Add the eggs and beat for 1 minute at low speed, scraping down the sides with a rubber spatula as needed. Slowly add the dissolved yeast and continue beating at low speed for 5 minutes. Stop the machine, scrape any dough off the dough hook, and beat for another 5 minutes.
 - Add the butter cubes, about one-quarter of them at a time, beating for about 1 minute after each addition. Once all the butter has been added, beat for 10 minutes more, until the dough is smooth and silky.
 - Transfer the dough to a large floured bowl and cover with plastic wrap. Let stand in a warm place until doubled in size, about 3 hours.
@@ -30,4 +30,4 @@ directions:
 
 ---
 
-Recipe comes from Thomas' Keller's "ad hoc at home".
+Recipe comes from Thomas Keller's "ad hoc at home".

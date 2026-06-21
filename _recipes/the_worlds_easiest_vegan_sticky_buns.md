@@ -24,11 +24,11 @@ ingredients:
 - 1/2 tablespoon ground cinnamon
 
 directions:
-- In a large saucepan over medium heat, heat the almond or oat milk and 3 tablespoons vegan butter just ntil the vegan butter has melted. Do not boil. Remove from the heat and let cool to 110 degrees F. 
+- In a large saucepan over medium heat, heat the almond or oat milk and 3 tablespoons vegan butter just until the vegan butter has melted. Do not boil. Remove from the heat and let cool to 110 degrees F.
 - Transfer the milk mixture to a large mixing bowl and add the yeast. Let sit 10 minutes, then stir in 1 tablespoon sugar and the salt. 
 - Add the flour, 1/2 cup at a time, until the dough is too thick to stir, but still a bit sticky. Transfer to a floured surface and continue kneading a minute or so, adding just as much flour as you need to make a smooth dough, but not a dry one. 
 - Transfer the lightly kneaded dough to a well-oiled large mixing bowl, turning the dough around so all sides are coated in the oil. Cover the bowl with plastic wrap and place the bowl in a warm, draft-free location until the dough has almost doubled in size, about 1 hour. 
-- Meanwhile, in a small mixing bowl, stir together the  1/2 cup melted vegan butter and 1/2 cup dark brown sugar. Spead the mixture evenly over the bottom of an 8- x 8-inch baking pan. Spread the toasted pecans evenly over the sugar mixture and set aside. 
+- Meanwhile, in a small mixing bowl, stir together the 1/2 cup melted vegan butter and 1/2 cup dark brown sugar. Spread the mixture evenly over the bottom of an 8- x 8-inch baking pan. Spread the toasted pecans evenly over the sugar mixture and set aside.
 - In another small mixing bowl, stir together the remaining 1/4 cup vegan butter and 1/2 cup brown sugar. Set aside. 
 - Once the dough has nearly doubled in size, transfer it to a lightly floured surface and pat/roll it out into a thin rectangle about x- by x-inches. Spread the reserved sugar mixture evenly over the dough and sprinkle evenly with the cinnamon. 
 - Starting along the long side, tightly roll the dough, jelly-roll style. Secure the roll by pinching a narrow seam with your fingers along the long edge of the dough. Place the roll seam side down on the floured work surface. Using a serrated knife or dental floss, cut the roll into 10 even buns. Place the rolls in a single layer in the prepared pan, cover the pan with plastic wrap, and set aside again in a warm, draft-free location while you preheat the oven.

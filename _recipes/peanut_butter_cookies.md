@@ -28,4 +28,4 @@ directions:
 
 Adapted from the cookbook "Flour", by Joanne Chang?
 
-The cookies can be stored in an airtight container at room temperature for up to 3 days. The unbaked dough can be stored in an airtight container in the refrigerated for up to 1 week.
+The cookies can be stored in an airtight container at room temperature for up to 3 days. The unbaked dough can be stored in an airtight container in the refrigerator for up to 1 week.

@@ -20,7 +20,7 @@ directions:
 - Brown onions in a small amount of butter or oil and set aside.
 - Brown the beef. About half way through, add all of the ingredients except the garlic.
 - Add the garlic just before the beef is done cooking.
-- Serve meat with as a taco, or use it in a burrito or nachos.
+- Serve meat as a taco, or use it in a burrito or nachos.
 
 
 

@@ -8,7 +8,7 @@ yield: "4-6 servings"
 
 ingredients:
 - 4-6 tablespoons butter or extra virgin olive oil, to taste
-- 1 medium inion, minced
+- 1 medium onion, minced
 - 10 saffron threads
 - 1-¹/₂ cups Arborio (or other short grain) rice
 - a couple pinches salt, to taste
