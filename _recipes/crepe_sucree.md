@@ -3,8 +3,10 @@
 layout: recipe
 title:  "Crepe Sucree"
 image: CrepeSucree.jpg
-tags: Foreign, Dessert
-yield: "Lots of crepes"
+tags: [french, dessert]
+yield: "12 crepes"
+servings: 6
+calories:
 
 ingredients:
 - 1 cup all-purpose flour

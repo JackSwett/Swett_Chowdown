@@ -1,48 +1,46 @@
-# Chowdown
+# Swett Family Recipes
 
-A simple, plaintext recipe database for hackers
+A plaintext recipe site built with [Jekyll](https://jekyllrb.com/) and [Tailwind CSS](https://tailwindcss.com/), hosted on GitHub Pages.
 
-[http://chowdown.io](http://chowdown.io)
+**Live site:** [recipes.swett.org](https://recipes.swett.org)
 
-# Getting Started
+Forked from [clarklab/chowdown](https://github.com/clarklab/chowdown).
 
-This is a Jekyll build. Make sure you have Jekyll [installed](https://jekyllrb.com/). To install, run this command in the terminal (or iTerm, etc):
+## Project Structure
 
-```gem install bundler jekyll```
+```
+_recipes/       # Recipe markdown files
+_components/    # Sub-recipes used inside other recipes
+_layouts/       # Page templates (default, recipe, post, page)
+_includes/      # Shared HTML partials (head.html with nav)
+images/         # Recipe photos
+plugins/        # Jekyll search plugin
+```
 
-or to check if you've got it installed already:
+## Local Development
 
-```jekyll -v```
+Requires Ruby 3.0+ and Bundler.
 
-Clone or download this repo. Navigate to the folder in terminal (or iTerm, etc), and then run:
+```bash
+# Install dependencies (first time only)
+bundle install
 
-```jekyll serve```
+# Serve locally
+bundle exec jekyll serve --watch --baseurl ""
+```
 
-With default settings, you should be able to view the site locally at `http://127.0.0.1:4000/`
+View at [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
-# Writing a Recipe
+> **Note:** The `--baseurl ""` flag is required. The production `baseurl` in `_config.yml` is set to the full site URL, which breaks local routing. The override makes links work on localhost.
 
-The recipes are stored in the collection "Recipes" (the folder /_recipes).
+## Deploying to GitHub Pages
 
-They are written in Markdown and contain a few special sections:
+Push to the `gh-pages` branch. GitHub Pages builds and deploys automatically.
 
-- The frontmatter, which contains:
- - Title, Image, and Layout (which is "recipe")
- - Ingredients (a list of things in the dish)
- - Directions (a list of steps for the dish)
-- Body content (for intros, stories, written detail)
+```bash
+git push origin gh-pages
+```
 
-If you need help with Markdown, here's a [handy cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+## Adding a Recipe
 
-# Writing a component recipe
-
-A component recipe is a special recipe made up of other recipes. To make a new component recipe:
-
-- place your smaller, single recipes into the /_components folder
-- make a new recipe like normal in the /_recipes folders
-- in the frontmatter of this new recipe, include your recipes from the /_components folder (instead of the usual Ingredeints list)
-
-You can an example on the Red Berry Tart recipe. 
-
-- [example Markdown](https://raw.githubusercontent.com/clarklab/chowdown/gh-pages/_recipes/red-berry-tart.md)
-- [example recipe page](http://chowdown.io/recipes/red-berry-tart.html)
+Create a new `.md` file in `_recipes/` (or `_components/` for sub-recipes like sauces and fillings). See [`STYLE_GUIDE.md`](STYLE_GUIDE.md) for all formatting rules, examples, and conventions.

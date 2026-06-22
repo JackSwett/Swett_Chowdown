@@ -3,11 +3,13 @@
 layout: recipe
 title:  "Pasta Frittata"
 image: PastaFrittata.jpg
-tags: pasta
+tags: [pasta]
 yield: "4-6 servings"
+servings: 4
+calories:
 
 ingredients:
-- ¹/₂ pound spaghetti
+- 1/2 pound spaghetti
 - 4 tablespoons butter
 - 150 grams onion
 - 170 grams bacon
@@ -16,7 +18,7 @@ ingredients:
 - 50 grams parmesan
 
 directions:
-- Dice onion. Cook onion with 3 tbs. of butter in a 10-inch cast iron skillet on low heat for 10 to 15 minutes, or until onions become soft and golden. Transfer onions to a small bowl and set aside. Leave any oil in the cast iron.
+- Dice onion. Cook onion with 3 tablespoons of butter in a 10-inch cast iron skillet on low heat for 10 to 15 minutes, or until onions become soft and golden. Transfer onions to a small bowl and set aside. Leave any oil in the cast iron.
 - Bring a large pot of water to a boil. Preheat oven to 350°F (175°C).
 - Cook bacon in cast-iron skillet. Transfer bacon to a cutting board before it becomes crispy. Discard the bacon grease in an appropriate container. Dice bacon.
 - Add spaghetti to boiling water and cook molto al dente. It should still be firm, but not crunchy when drained into a colander. Run cold water over the pasta until it is room temperature. Leave it to drain completely.

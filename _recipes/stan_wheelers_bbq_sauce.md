@@ -3,13 +3,16 @@
 layout: recipe
 title:  "Stan Wheeler's BBQ Sauce"
 image: stan-wheelers-bbq-sauce.jpeg
-tags: sauce, BBQ
+tags: [sauce, bbq]
+yield: "2 cups"
+servings: 16
+calories:
 
 ingredients:
 - 1 tablespoon olive oil
 - 1 medium yellow onion, finely chopped
 - 1 large clove garlic, finely minced
-- 6 oz tomato paste
+- 170 grams tomato paste
 - 1 cup ketchup
 - 1/4 cup Worcestershire sauce
 - 1/2 teaspoon ground allspice

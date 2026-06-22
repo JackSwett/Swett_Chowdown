@@ -3,20 +3,22 @@
 layout: recipe
 title: "Vegan Seitan and Mushroom Ragu Bolognese"
 image:
-tags: vegan, pasta, sauce
-yield: "about 2 quarts"
+tags: [vegan, pasta, sauce]
+yield: "2 quarts"
+servings: 8
+calories:
 
 ingredients:
 - 1/4 cup (60 ml) extra-virgin olive oil
-- 1 medium onion (about 12 oz/340 grams), finely minced
-- 1 large carrot (about 8 oz/225 grams), finely minced
-- 3 ribs celery (about 6 oz/170 grams), finely minced
+- 1 medium onion (about 340 grams), finely minced
+- 1 large carrot (about 225 grams), finely minced
+- 3 ribs celery (about 170 grams), finely minced
 - 5 medium cloves of garlic, finely minced (about x tablespoons)
-- 1 lb. (450 grams) cremini mushrooms, stems discarded and caps crumbled by hand into pea-size morsels
-- 1 lb. (450 grams) seitan, drained and crumbled by hand into pea-size morsels
+- 1 pound (450 grams) cremini mushrooms, stems discarded and caps crumbled by hand into pea-size morsels
+- 1 pound (450 grams) seitan, drained and crumbled by hand into pea-size morsels
 - 1 tablespoon (15 ml) tomato paste
 - 1-1/2 cups (355 ml) dry red wine
-- 1, 28 oz (795 grams) can peeled whole tomatoes, pureed or crushed by hand
+- 1 (795 grams) can peeled whole tomatoes, pureed or crushed by hand
 - 1/4 cup (60 ml) red (aka) miso
 - 2 tablespoons (30 ml) refined neutral coconut oil (or another neutral oil like canola, safflower or peanut)
 - 2 teaspoons (10 ml) dark soy sauce (or regular soy sauce)

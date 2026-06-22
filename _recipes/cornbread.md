@@ -3,18 +3,20 @@
 layout: recipe
 title:  "Cornbread"
 image: Cornbread.jpeg
-tags: bread, baking
-yield: "8 Servings"
+tags: [bread, baking]
+yield: "8 servings"
+servings: 8
+calories:
 
 ingredients:
 - 1 cup milk
-- ¹/₄ cup butter, melted
+- 1/4 cup butter, melted
 - 1 large egg
-- 1-¹/₄ cups yellow, white, or blue cornmeal
+- 1-1/4 cups yellow, white, or blue cornmeal
 - 1 cup all-purpose flour
-- ¹/₂ cup sugar
+- 1/2 cup sugar
 - 1 tablespoon baking powder
-- ¹/₂ teaspoon salt
+- 1/2 teaspoon salt
 
 directions:
 - Heat oven to 400°F (200°C). Grease bottom and side of an 8-10 inch cast-iron skillet with butter.

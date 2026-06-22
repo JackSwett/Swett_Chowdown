@@ -3,15 +3,17 @@
 layout: recipe
 title:  "Snowball Cookies"
 image:
-tags: cookie, dessert, vegan
-yield: "60 10-gram cookies"
+tags: [cookie, dessert, vegan]
+yield: "60 cookies"
+servings: 60
+calories:
 
 ingredients:
 - 16 tablespoons unsalted butter, softened
 - 70 grams superfine granulated sugar
-- 1-¹/₂ teaspoons vanilla extract
+- 1-1/2 teaspoons vanilla extract
 - 285 grams all-purpose flour
-- ¹/₂ teaspoon salt
+- 1/2 teaspoon salt
 - 225 grams nuts (1 cup meal, rest finely chopped)
 - 1 cup (?) powdered sugar, for coating
 

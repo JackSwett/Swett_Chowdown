@@ -1,9 +1,11 @@
 ---
 
-layout: component
+layout: recipe
 title: "Vegan Bechamel Sauce"
-tags: vegan, sauce 
-yield: "about 2 cups"
+tags: [vegan, sauce]
+yield: "2 cups"
+servings: 8
+calories:
 
 ingredients:
 - 2 cups (475 ml) unsweetened almond or oat milk

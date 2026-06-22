@@ -3,15 +3,17 @@
 layout: recipe
 title:  "Lasagna (Meat)"
 image: LasagneWithMeat.jpg
-tags: pasta, meat
+tags: [pasta, meat]
 yield: "8 servings"
+servings: 8
+calories:
 
 ingredients:
-- 2-¹/₂ cups Bolognese sauce
-- 2-¹/₂ cups Béchamel sauce
+- 2-1/2 cups Bolognese sauce
+- 2-1/2 cups Béchamel sauce
 - several sheets spinach pasta
 - 1 tablespoon salt
-- ²/₃ cup parmesan, grated
+- 2/3 cup parmesan, grated
 - 2 tablespoons butter
 
 components:

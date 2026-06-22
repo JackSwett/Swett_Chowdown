@@ -3,8 +3,10 @@
 layout: recipe
 title: "Vegan Perfect Pie Crust"
 image: VeganPerfectPieCrust
-tags: dessert, pastry
-yield: "2, 9-inch pie crusts"
+tags: [dessert, pastry, vegan]
+yield: "2 pie crusts (9-inch)"
+servings: 16
+calories:
 
 ingredients:
 - 2 cups (300 grams) all-purpose flour

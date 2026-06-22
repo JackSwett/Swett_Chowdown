@@ -3,8 +3,10 @@
 layout: recipe
 title:  "Crepe Sarrasin"
 image: CrepeSarrasin.jpg
-tags: Foreign, Dessert, Vegan
-yield: "Lots of crepes"
+tags: [french, vegan]
+yield: "20 crepes"
+servings: 10
+calories:
 
 ingredients:
 - 1 kg farine de ble noir (buckwheat flour)

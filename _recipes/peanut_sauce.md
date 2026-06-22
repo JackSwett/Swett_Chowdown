@@ -3,19 +3,21 @@
 layout: recipe
 title:  "Peanut Sauce"
 image: PeanutSauce.jpg
-tags: sauce, vegan
+tags: [sauce, vegan]
 yield: "1 cup"
+servings: 8
+calories:
 
 ingredients:
-- ¹/₂ cup smooth natural peanut butter
+- 1/2 cup smooth natural peanut butter
 - 2 cloves garlic
-- ¹/₃ cup water
+- 1/3 cup water
 - 3 tablespoons rice vinegar
 - 2 tablespoons soy sauce
 - 1 tablespoon agave nectar
 - 1 tablespoon sriracha (to taste)
 - 1 teaspoon toasted sesame oil
-- ¹/₂ teaspoon salt (as needed)
+- 1/2 teaspoon salt (as needed)
 
 directions:
 - Place all of the ingredients in a small bowl and mix until very smooth.

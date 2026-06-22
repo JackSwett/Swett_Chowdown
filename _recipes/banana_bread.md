@@ -4,8 +4,10 @@ layout: recipe
 title:  "Banana Bread"
 image: banana-bread.jpg
 imagecredit: https://flic.kr/p/7HZmzn
-tags: breakfast, baking
-yield: 1 loaf
+tags: [breakfast, baking]
+yield: "1 loaf"
+servings: 10
+calories:
 
 ingredients:
 - 2 cups all-purpose flour
@@ -21,7 +23,7 @@ ingredients:
 
 directions:
 - Thoroughly grease a standard 8"x4" inch aluminum loaf pan with butter or shortening. Then, fit a piece of parchment paper (about 8"x16") down one side of the loaf pan, across the bottom, and up the other side, leaving a few inches of paper above each side of the pan. Fold the over-hanging paper and crease well so it doesn't stand straight up and bake into the rising loaf :-) Don't worry about the two short ends of the pan not covered with paper - just make sure they are well greased.
-- Preheat the oven to 350 degrees F with the oven rack adjusted to such a position that the loaf will bake in the very center of the oven. (If the rack is too low, the bread will burn on the bottom before baking through. Too close to the top, and the top will cook but the bottom will stay raw.)
+- Preheat the oven to 350°F (175°C) with the oven rack adjusted to such a position that the loaf will bake in the very center of the oven. (If the rack is too low, the bread will burn on the bottom before baking through. Too close to the top, and the top will cook but the bottom will stay raw.)
 - In a medium bowl, whisk together the flour, baking powder, salt and baking soda. Set aside.
 - In a large mixing bowl (or bowl of a stand mixer fitted with the paddle attachment) combine the sugar and room-temperature shortening. Mix on high speed if using a hand-held mixer (medium-high if using the stand mixer), stopping 2 or 3 times to scrape down the sides of the bowl, until very light and fluffy, 3-4 minutes. Add the eggs, one at a time, and mix again on high (medium-high) after each addition, until they are well incorporated, about 30 seconds each time. Add the vanilla and mix until combined.
 - Add a large spoonful of the flour mixture to the sugar and egg mixture and mix just until combined. Add the mashed bananas and mix on medium speed until well combined. Add half of the flour mixture and beat on high (medium-high) until combined. Scrape down the sides of the bowl and then add the remaining half of the flour mixture and beat on high (medium-high) until all the flour is well mixed in, but not more, otherwise you will develop too much gluten and toughen the bread.

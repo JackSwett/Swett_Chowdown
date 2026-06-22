@@ -3,16 +3,18 @@
 layout: recipe
 title:  "Tacos"
 image:
-tags: meat, mexican
+tags: [meat, mexican]
 yield: "4 servings"
+servings: 4
+calories:
 
 ingredients:
 - 1 pound 80/20 ground beef
 - 1 small onion, finely diced
 - 2 tablespoons chili powder
 - 1 teaspoon ground cumin
-- ¹/₂ teaspoon dried oregano
-- ¹/₂ teaspoon salt
+- 1/2 teaspoon dried oregano
+- 1/2 teaspoon salt
 - 8-10 grinds black pepper
 - 1 clove garlic
 

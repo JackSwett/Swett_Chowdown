@@ -3,17 +3,19 @@
 layout: recipe
 title:  "Pancakes"
 image: Pancake.jpg
-tags: breakfast
-yield: '8 - 5" pancakes'
+tags: [breakfast]
+yield: "8 pancakes"
+servings: 4
+calories:
 
 ingredients:
 - 2 large eggs
 - 5 tablespoons butter
 - 1 cup milk
-- 1-¹/₄ cups all-purpose flour
+- 1-1/4 cups all-purpose flour
 - 1 tablespoon sugar
 - 4 teaspoons baking powder
-- ³/₄ teaspoons salt
+- 3/4 teaspoon salt
 
 directions:
 - Beat the eggs in a mixing bowl until they are thoroughly blended.

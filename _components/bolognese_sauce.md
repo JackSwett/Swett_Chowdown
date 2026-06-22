@@ -3,7 +3,10 @@
 layout: recipe
 title:  "Bolognese Sauce"
 image: BologneseSauce.jpg
-yield: 2-¹/₂ cups
+tags: [sauce, italian]
+yield: "2-1/2 cups"
+servings: 4
+calories:
 
 ingredients:
 - 2 tablespoons yellow onion (chopped)
@@ -11,11 +14,11 @@ ingredients:
 - 3 tablespoons butter
 - 2 tablespoons celery (chopped)
 - 2 tablespoons carrots (chopped)
-- ³/₄ pounds lean ground beef
+- 3/4 pound lean ground beef
 - 1 teaspoon salt
 - 1 cup dry white wine
-- ¹/₂ cup milk
-- ¹/₈ teaspoon nutmeg
+- 1/2 cup milk
+- 1/8 teaspoon nutmeg
 - 2 cups Italian tomatoes (roughly chopped, with their juice)
 
 directions:

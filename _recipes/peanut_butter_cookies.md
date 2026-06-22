@@ -3,8 +3,10 @@
 layout: recipe
 title:  "Peanut Butter Cookies"
 image: pb-cookies.jpg
-tags: cookie, dessert
-yield: "Approx. 4 dozen, 31-gram, cookies"
+tags: [cookie, dessert]
+yield: "4 dozen cookies"
+servings: 48
+calories:
 
 ingredients:
 - 2 sticks unsalted butter

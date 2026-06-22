@@ -3,13 +3,16 @@
 layout: recipe
 title:  "Béchamel Sauce"
 image: BechamelSauce.jpg
-yield: 2-¹/₂ cups
+tags: [sauce, italian]
+yield: "2-1/2 cups"
+servings: 4
+calories:
 
 ingredients:
 - 3 cups milk
 - 6 tablespoons butter
-- 4-¹/₂ tablespoons all-purpose flour
-- ¹/₄ teaspoon salt
+- 4-1/2 tablespoons all-purpose flour
+- 1/4 teaspoon salt
 
 directions:
 - In a small pan, heat the milk until it comes to the very edge of a boil.

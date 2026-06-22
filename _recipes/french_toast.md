@@ -2,8 +2,11 @@
 
 layout: recipe
 title: "French Toast Formula"
-image: ERROR.png
-tags: breakfast, dessert
+image:
+tags: [breakfast]
+yield: "2 slices"
+servings: 1
+calories:
 
 ingredients:
 - 1 egg
@@ -11,7 +14,7 @@ ingredients:
 - dash of cinnamon
 - few fine strands of orange zest
 - 2 slices slightly stale, sturdy bread (rustic country style, sourdough, etc.)
-- 1 Tablespoon butter
+- 1 tablespoon butter
 
 directions:
 - In a shallow pie plate, or similar dish, whisk together the egg, milk, cinnamon, and orange zest.
