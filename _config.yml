@@ -5,7 +5,7 @@ description: The plain text recipe database for hackers
 baseurl: "https://recipes.swett.org"
 language: "en"
 lang_direction: "ltr"
-color: "#007FFF"
+color: "#B45309"
 github_username: JackSwett
 
 # Build settings

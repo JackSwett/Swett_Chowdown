@@ -2,19 +2,38 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="recipes xs-px1 xs-mt2">
-    <div class="clearfix">
-    {% assign sorted = site.recipes | sort: "name" %}
-    {% for post in sorted %}
+  <div class="content w-full md:w-4/5 h-full overflow-scroll">
+      
+      <div class="recipes mb-24 py-8">
+          <h2 class="text-amber-950 md:text-primary uppercase font-semibold mb-2 px-6">Most Recent</h2>
 
-      <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
-          <a class="block relative bg-blue" href="{{ post.url | prepend: site.baseurl }}">
-            <div class="image ratio bg-cover"{% for image in post.image %} style="background-image:url({{site.baseurl}}/images/{{ image }});"{% endfor %}></div>
-            <h1 class="title p2 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h1>
-          </a>
+          <div class="flex overflow-scroll md:overflow-visible snap-x md:grid px-6 md:h-full md:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-6">
+            {% assign first_recipes = site.recipes | sort:"date" %}
+            {% for post in first_recipes limit:3 %}
+              <a class="recipe w-3/4 md:w-auto flex-shrink-0 block snap-center md:hover:scale-105 md:hover:rotate-1 transition" href="{{ post.url | prepend: site.baseurl }}">
+                <canvas class="aspect-video w-full rounded-xl bg-gray-100 mb-1 bg-cover bg-center"{% for image in post.image %} style="background-image:url({{site.baseurl}}/images/{{ image }});"{% endfor %}>
+                </canvas>
+                <h1 class="font-semibold leading-tight text-2xl text-primary font-gelica md:text-base md:text-amber-950 md:font-inter pr-16 md:pr-0">{{ post.title }}</h1>
+              </a>
+            {% endfor %}
+          </div>
+
+
+          <div class="grid px-6 h-full grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+
+
+            {% assign sorted = site.recipes | sort:"date" %}
+              {% for post in sorted offset:3 %}
+                <a class="recipe md:hover:scale-105 md:hover:rotate-1 transition" href="{{ post.url | prepend: site.baseurl }}">
+                    <canvas class="aspect-video w-full rounded-xl bg-gray-100 mb-1 bg-cover bg-center"{% for image in post.image %} style="background-image:url({{site.baseurl}}/images/{{ image }});"{% endfor %}
+                    >
+                    </canvas>
+                    <h1 class="font-semibold leading-tight">{{ post.title }}</h1>
+                </a>
+            {% endfor %}
+               
+            
+          </div>
       </div>
-    {% endfor %}
+
   </div>
-  </div>
-</div>

@@ -6,22 +6,76 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link href="{{ "/css/bass.css" | prepend: site.baseurl }}" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ site.baseurl }}/icons/favicon-512x512.png">
   <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
-  <link rel="mask-icon" href="{{ site.baseurl }}/icons/safari-pinned-tab.svg" color="#007fff">
   <link rel="shortcut icon" href="{{ site.baseurl }}/icons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#007fff">
+  <meta name="msapplication-TileColor" content="#B45309">
   <meta name="msapplication-config" content="{{ site.baseurl }}/icons/browserconfig.xml">
-  <meta name="theme-color" content="#007fff">
+  <meta name="theme-color" content="#B45309">
+
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl }}{% else %}{{ site.baseurl }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{% if page.title %}{{ site.baseurl }}/images/{{ page.image }}{% else %}/assets/social.png{% endif %}">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="recipes.swett.org">
+  <meta property="twitter:url" content="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl }}{% else %}{{ site.baseurl }}{% endif %}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.title %}{{ site.baseurl }}/images/{{ page.image }}{% else %}/assets/social.png{% endif %}">
+
+
+  <style>
+    @view-transition {
+      navigation: auto;
+    }
+    .overflow-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    .overflow-scroll {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/htf0jhw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#B45309',
+          },
+          boxShadow: {
+            '3xl': '0 0px 60px -15px rgba(0, 0, 0, 0.5)',
+          },
+          fontFamily: {
+            gelica: ['gelica', 'sans-serif'],
+            inter: ['inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
 
   <script>
     if ("serviceWorker" in navigator) {
@@ -39,14 +93,29 @@
     }
   }
   </script>
-  
+
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@chowdownapp">
-  <meta name="twitter:creator" content="@clarklab">
-  {% if page.title %}<meta name="twitter:title" content="{{ page.title }}">{% else %}<meta name="twitter:title" content="Chowdown">{% endif %}
+  {% if page.title %}<meta name="twitter:title" content="{{ page.title }}">{% else %}<meta name="twitter:title" content="{{ site.title }}">{% endif %}
   {% if page.url %}<meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}">{% endif %}
-  {% if page.directions %}<meta name="twitter:description" content="{{ page.content | strip_html }}">{% else %}<meta name="twitter:description" content="Chowdown">{% endif %}
-  {% if page.image %}<meta name="twitter:image:src" content="{{site.baseurl}}/images/{{ page.image }}">{% else %}<meta name="twitter:image:src" content="{{site.baseurl}}/images/crockpot-buffalo-chicken.jpg">{% endif %}
+  {% if page.directions %}<meta name="twitter:description" content="{{ page.content | strip_html }}">{% else %}<meta name="twitter:description" content="{{ site.title }}">{% endif %}
+  {% if page.image %}<meta name="twitter:image:src" content="{{site.baseurl}}/images/{{ page.image }}">{% endif %}
 
 </head>
+
+<nav class="w-full md:w-1/4 lg:w-1/5 md:h-full bg-amber-50 fixed md:relative left-0 bottom-0 flex md:flex-col justify-between md:justify-start px-6 py-4 md:p-8 md:gap-4 z-10 shadow-3xl md:shadow-none {% if page.url contains '/recipes/' %}md:hidden{% endif %}">
+      <a href="/" class="flex flex-col md:flex-row items-center gap-0 md:gap-2 {% if page.url == '/' %}text-primary{% endif %}">
+        <svg class="w-12 md:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 16.25H15V7.5H12V16.25H9V7.5H6V16.25C6 18.9 8.49 21.05 11.625 21.2125V32.5H15.375V21.2125C18.51 21.05 21 18.9 21 16.25V7.5H18V16.25ZM25.5 12.5V22.5H29.25V32.5H33V7.5C28.86 7.5 25.5 10.3 25.5 12.5Z" fill="currentColor" />
+        </svg>
+        <span class="text-sm md:text-2xl font-medium md:font-gelica">Recipes</span>
+      </a>
+
+      <a href="/search" class="flex flex-col md:flex-row items-center gap-0 md:gap-2 {% if page.url == '/search.html' or page.url == '/search/' %}text-primary{% endif %}">
+        <svg class="w-12 md:w-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13 21.5C13 16.8056 16.8056 13 21.5 13C26.1944 13 30 16.8056 30 21.5C30 23.8248 29.0667 25.9315 27.5544 27.4661C27.5392 27.4801 27.5241 27.4946 27.5093 27.5093C27.4946 27.5241 27.4801 27.5392 27.4661 27.5544C25.9315 29.0667 23.8248 30 21.5 30C16.8056 30 13 26.1944 13 21.5ZM28.502 30.6233C26.5628 32.1139 24.1349 33 21.5 33C15.1487 33 10 27.8513 10 21.5C10 15.1487 15.1487 10 21.5 10C27.8513 10 33 15.1487 33 21.5C33 24.1349 32.1139 26.5628 30.6233 28.502L37.5607 35.4393C38.1464 36.0251 38.1464 36.9749 37.5607 37.5607C36.9749 38.1465 36.0251 38.1465 35.4393 37.5607L28.502 30.6233Z" fill="currentColor" />
+        </svg>
+        <span class="text-sm md:text-2xl font-medium md:font-gelica">Search</span>
+      </a>
+
+</nav>
