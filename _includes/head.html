@@ -17,9 +17,9 @@
   <link rel="icon" type="image/png" sizes="512x512" href="{{ site.baseurl }}/icons/favicon-512x512.png">
   <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
   <link rel="shortcut icon" href="{{ site.baseurl }}/icons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#B45309">
+  <meta name="msapplication-TileColor" content="#047857">
   <meta name="msapplication-config" content="{{ site.baseurl }}/icons/browserconfig.xml">
-  <meta name="theme-color" content="#B45309">
+  <meta name="theme-color" content="#047857">
 
 
   <!-- Facebook Meta Tags -->
@@ -63,7 +63,8 @@
       theme: {
         extend: {
           colors: {
-            primary: '#B45309',
+            primary: '#047857',
+            sand: '#E0E3D0',
           },
           boxShadow: {
             '3xl': '0 0px 60px -15px rgba(0, 0, 0, 0.5)',
@@ -103,7 +104,14 @@
 
 </head>
 
-<nav class="w-full md:w-1/4 lg:w-1/5 md:h-full bg-amber-50 fixed md:relative left-0 bottom-0 flex md:flex-col justify-between md:justify-start px-6 py-4 md:p-8 md:gap-4 z-10 shadow-3xl md:shadow-none {% if page.url contains '/recipes/' %}md:hidden{% endif %}">
+<header class="md:hidden fixed top-0 left-0 w-full bg-sand z-20 px-6 py-3 shadow-sm">
+  <a href="/" class="text-2xl font-gelica font-bold text-primary">Swett Recipes</a>
+</header>
+
+<nav class="w-full md:w-1/4 lg:w-1/5 md:h-full bg-sand fixed md:relative left-0 bottom-0 flex md:flex-col justify-between md:justify-start px-6 py-4 md:p-8 md:gap-4 z-10 shadow-3xl md:shadow-none {% if page.url contains '/recipes/' %}md:hidden{% endif %}">
+      <a href="/" class="hidden md:block mb-4">
+        <h1 class="text-3xl font-gelica font-bold text-primary leading-tight">Swett<br>Recipes</h1>
+      </a>
       <a href="/" class="flex flex-col md:flex-row items-center gap-0 md:gap-2 {% if page.url == '/' %}text-primary{% endif %}">
         <svg class="w-12 md:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M18 16.25H15V7.5H12V16.25H9V7.5H6V16.25C6 18.9 8.49 21.05 11.625 21.2125V32.5H15.375V21.2125C18.51 21.05 21 18.9 21 16.25V7.5H18V16.25ZM25.5 12.5V22.5H29.25V32.5H33V7.5C28.86 7.5 25.5 10.3 25.5 12.5Z" fill="currentColor" />

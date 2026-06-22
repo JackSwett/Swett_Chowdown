@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 w-full" itemscope itemtype="http://schema.org/Recipe">
+<div class="grid grid-cols-1 md:grid-cols-2 w-full pt-14 md:pt-0" itemscope itemtype="http://schema.org/Recipe">
 
 
   <div class="image bg-primary relative aspect-video md:aspect-auto md:h-full">
@@ -38,11 +38,19 @@ layout: default
 
     <div class="tags flex gap-2">
       {% for tag in page.tags %}
-        <a href="{{ site.baseurl }}/search?tag={{ tag }}" class="tag py-1 px-3 bg-amber-200 rounded-lg text-amber-900 hover:scale-110 hover:rotate-2 transition hover:bg-primary hover:text-white">
+        <a href="{{ site.baseurl }}/search?tag={{ tag }}" class="tag py-1 px-3 bg-emerald-200 rounded-lg text-emerald-900 hover:scale-110 hover:rotate-2 transition hover:bg-primary hover:text-white">
           {{ tag | strip }}
         </a>
       {% endfor %}
     </div>
+
+    {% if page.yield or page.servings or page.calories %}
+    <div class="recipe-meta flex flex-wrap gap-4 text-sm text-emerald-900">
+      {% if page.yield %}<span class="bg-emerald-100 px-3 py-1 rounded-lg"><strong>Yield:</strong> {{ page.yield }}</span>{% endif %}
+      {% if page.servings %}<span class="bg-emerald-100 px-3 py-1 rounded-lg"><strong>Servings:</strong> {{ page.servings }}</span>{% endif %}
+      {% if page.calories %}<span class="bg-emerald-100 px-3 py-1 rounded-lg"><strong>Calories:</strong> {{ page.calories }} per serving</span>{% endif %}
+    </div>
+    {% endif %}
 
     <div class="text-left text-lg leading-loose [&>*]:mb-6 [&_a]:underline [&_a]:decoration-[3px] [&_a]:decoration-primary [&_a]:underline-offset-2" itemprop="description">{{page.content}}</div>
 

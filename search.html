@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="content w-full md:w-4/5 p-6 h-full overflow-scroll">
+<div class="content w-full md:w-4/5 p-6 pt-16 md:pt-6 h-full overflow-scroll">
   <div class="search container max-width-2 mt-4">
     <div id="search-container" class="relative">
 
@@ -13,7 +13,7 @@ layout: default
       </div>
 
       <input
-        class="block w-full rounded-md bg-white px-4 py-2 text-xl text-gray-900 outline outline-2 -outline-offset-1 outline-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary focus:ring-[6px] focus:ring-amber-200"
+        class="block w-full rounded-md bg-white px-4 py-2 text-xl text-gray-900 outline outline-2 -outline-offset-1 outline-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary focus:ring-[6px] focus:ring-emerald-200"
         type="text"
         id="search-input"
         placeholder="search titles or ingredients..."
@@ -24,13 +24,13 @@ layout: default
 
 
       <div class="suggestions w-full mt-4 text-lg flex flex-col gap-2">
-      	<span class="text-amber-950 md:text-primary uppercase font-semibold text-center">INGREDIENTS</span>
-        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-amber-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">butter</span> 
-        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-amber-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">flour</span> 
-        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-amber-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">sugar</span> 
-        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-amber-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">eggs</span> 
-        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-amber-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">cheese</span> 
-        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-amber-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">garlic</span>
+      	<span class="text-stone-900 md:text-primary uppercase font-semibold text-center">INGREDIENTS</span>
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-emerald-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">butter</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-emerald-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">flour</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-emerald-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">sugar</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-emerald-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">eggs</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-emerald-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">cheese</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-emerald-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">garlic</span>
       </div>
 
 
@@ -48,7 +48,7 @@ layout: default
 {% assign tag_array = all_tags | split: "," %}
 
 <div class="suggestions w-full mt-4 text-lg flex flex-col gap-2">
-  <span class="text-amber-950 md:text-primary uppercase font-semibold text-center">TAGS</span>     
+  <span class="text-stone-900 md:text-primary uppercase font-semibold text-center">TAGS</span>     
   {% for tag in tag_array limit:6 %}
     {% if tag != "" %}
       <span class="suggestion cursor-pointer text-white text-xl px-3 py-3 rounded-lg bg-primary text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">{{ tag }}</span>
