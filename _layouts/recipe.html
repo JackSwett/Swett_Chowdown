@@ -2,16 +2,27 @@
 layout: default
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 w-full pt-14 md:pt-0" itemscope itemtype="http://schema.org/Recipe">
+<div class="grid grid-cols-1 md:grid-cols-2 w-full pt-14 md:pt-0 relative" itemscope itemtype="http://schema.org/Recipe">
+
+<!-- Print-only QR code -->
+<div id="recipe-qr" class="hidden"></div>
+<span class="print-site-url hidden">recipes.swett.org</span>
 
 
   <div class="image bg-primary relative aspect-video md:aspect-auto md:h-full">
 
-    <a href="/" class="back bg-white rounded-full block absolute top-6 md:top-10 left-6 md:left-10 p-4 md:p-6 z-10">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 md:size-8">
-        <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-      </svg>
-    </a>
+    <div class="absolute top-6 md:top-10 left-6 md:left-10 z-10 flex flex-col gap-3">
+      <a href="/" class="back bg-white rounded-full block p-4 md:p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 md:size-8">
+          <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <button onclick="window.print()" class="print-btn bg-white rounded-full block p-4 md:p-6 hover:bg-gray-100 transition" title="Print Recipe">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 md:size-8">
+          <path fill-rule="evenodd" d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 0 0 3 3h.27l-.575 1.726A.75.75 0 0 0 5.656 22.5h12.688a.75.75 0 0 0 .711-.974L18.48 19.75h.27a3 3 0 0 0 3-3v-6.294c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0 0 18 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25ZM16.5 6.205v-2.83a.375.375 0 0 0-.375-.375h-8.25a.375.375 0 0 0-.375.375v2.83a49.353 49.353 0 0 1 9 0Zm-1.25 13.295H8.75l.75-2.25h4.5l.75 2.25h.5Zm1.5-4.5H7.25a.75.75 0 0 0-.75.75v.008l.268-.001h10.464l.268.001v-.008a.75.75 0 0 0-.75-.75Z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
 
     {% for image in page.image %}
 
@@ -44,11 +55,10 @@ layout: default
       {% endfor %}
     </div>
 
-    {% if page.yield or page.servings or page.calories %}
+    {% if page.yield or page.servings %}
     <div class="recipe-meta flex flex-wrap gap-4 text-sm text-emerald-900">
       {% if page.yield %}<span class="bg-emerald-100 px-3 py-1 rounded-lg"><strong>Yield:</strong> {{ page.yield }}</span>{% endif %}
       {% if page.servings %}<span class="bg-emerald-100 px-3 py-1 rounded-lg"><strong>Servings:</strong> {{ page.servings }}</span>{% endif %}
-      {% if page.calories %}<span class="bg-emerald-100 px-3 py-1 rounded-lg"><strong>Calories:</strong> {{ page.calories }} per serving</span>{% endif %}
     </div>
     {% endif %}
 
@@ -65,24 +75,35 @@ layout: default
   <div class="">
 
     <div class="">
-      {% if page.components %}
-      <h4 class="uppercase text-primary font-semibold mb-2">{{ site.translation[site.language].components }}</h4>
-      <ul class="flex flex-col gap-2 mb-8">
-        {% for component in page.components %}
-        <li class="flex items-start gap-3">{{ component | markdownify }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-
       {% if page.ingredients %}
       <h2 class="uppercase text-primary font-semibold mb-2">{{ site.translation[site.language].ingredients }}</h2>
       <ul itemprop="ingredients" class="flex flex-col gap-2 mb-8">
         {% for ingredient in page.ingredients %}
+          {% assign is_component = false %}
+          {% assign ingredient_lower = ingredient | downcase %}
+          {% if page.components %}
+            {% for component in page.components %}
+              {% assign comp_lower = component | downcase %}
+              {% if ingredient_lower contains comp_lower %}
+                {% assign is_component = true %}
+                {% assign comp_id = component | slugify %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if is_component %}
+        <li itemprop="recipeIngredient" class="flex items-start gap-3 text-lg leading-loose"><a href="#{{ comp_id }}" class="underline decoration-2 decoration-primary underline-offset-2 inline-flex items-center gap-1">{{ ingredient | markdownify }}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-primary shrink-0" style="text-decoration:none"><path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-4.158a.75.75 0 1 1 1.08 1.04l-5.25 5.5a.75.75 0 0 1-1.08 0l-5.25-5.5a.75.75 0 1 1 1.08-1.04l3.96 4.158V3.75A.75.75 0 0 1 10 3Z" clip-rule="evenodd" /></svg></a></li>
+          {% else %}
         <li itemprop="recipeIngredient" class="flex items-start gap-3 text-lg leading-loose">{{ ingredient | markdownify }}</li>
+          {% endif %}
         {% endfor %}
       </ul>
       {% endif %}
 
+    </div>
+
+    <div class="print-description hidden" aria-hidden="true">
+      <h2 class="uppercase text-primary font-semibold mb-2">Background</h2>
+      <div class="text-lg leading-relaxed">{{page.content}}</div>
     </div>
 
     <div class="sm-col sm-col-6 lg-col-6">
@@ -107,7 +128,7 @@ layout: default
     <div class="sm-col sm-col-4 px2">
     {% for recipe in site.components %}
     {% if recipe.title == component %}
-      <h4 class="font-gelica text-3xl mb-8 mt-16">{{recipe.title}}</h4>
+      <h4 id="{{ recipe.title | slugify }}" class="font-gelica text-3xl mb-8 mt-16">{{recipe.title}}</h4>
 
       {% for image in recipe.image %}
       <div class="image ratio bg-cover relative mb-8" style="background-image:url({{site.baseurl}}/images/{{ image }});">
@@ -144,10 +165,6 @@ layout: default
   </div>
 
   {% endif %}
-
-  {% for category in page.categories %}
-    <p class="clearfix">{{ site.translation[site.language].category }}: <span itemprop="recipeCategory">{{ category }}</span></p>
-  {% endfor %}
 
   </article>
 
@@ -197,6 +214,21 @@ layout: default
   });
 
 });
+</script>
 
-
+<script src="{{site.baseurl}}/js/qrcode.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var qrContainer = document.getElementById("recipe-qr");
+    if (qrContainer) {
+      new QRCode(qrContainer, {
+        text: window.location.href,
+        width: 80,
+        height: 80,
+        colorDark: "#1a1a1a",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.M
+      });
+    }
+  });
 </script>
