@@ -72,27 +72,24 @@ layout: default
   </div>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<script src="{{site.baseurl}}/plugins/simple-jekyll-search.min.js" type="text/javascript"></script>
+<!-- Lunr.js full-text search -->
+<script src="{{site.baseurl}}/js/lunr.min.js" type="text/javascript"></script>
 
-<!-- Configuration -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Get elements
   const searchInput = document.getElementById('search-input');
   const filters = document.getElementById('filters');
   const results = document.getElementById('results');
+  const resultsList = document.getElementById('results_list');
   const filterButton = document.getElementById('filter');
 
-  // Function to toggle filters visibility
+  let lunrIndex = null;
+  let recipeData = [];
+
   function toggleFilters() {
     const filtersAreHidden = filters.classList.contains('hidden');
-
-    // Toggle filters visibility
     filters.classList.toggle('hidden', !filtersAreHidden);
     filters.classList.toggle('block', filtersAreHidden);
-
-    // Correct opacity logic
     if (filtersAreHidden) {
       filterButton.classList.remove('opacity-30');
     } else {
@@ -100,60 +97,110 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Function to show results and hide filters
   function showResults() {
     filters.classList.add('hidden');
     filters.classList.remove('block');
     results.classList.remove('hidden');
     results.classList.add('block');
-
     filterButton.classList.add('opacity-30');
   }
 
-  // Parse URL parameters
-  const params = new URLSearchParams(window.location.search);
-  const tag = params.get('tag');
+  function hideResults() {
+    results.classList.add('hidden');
+    results.classList.remove('block');
+    filters.classList.remove('hidden');
+    filters.classList.add('block');
+    filterButton.classList.remove('opacity-30');
+  }
 
-  // Initialize SimpleJekyllSearch
-  const simpleSearch = SimpleJekyllSearch({
-    searchInput,
-    resultsContainer: document.getElementById('results_list'),
-    noResultsText: 'No results (yet), but our search is janky. Try the same term again, right now, or try a suggested search term above...',
-    json: '{{site.baseurl}}/search.json',
-    searchResultTemplate: '<a class="recipe md:hover:scale-105 md:hover:rotate-1 transition" href="{url}"><canvas class="aspect-video w-full rounded-xl bg-gray-100 mb-1 bg-cover bg-center" style="background-image:url({image});"></canvas><h1 class="font-semibold leading-tight">{title}</h1></a>',
-    success: () => {
-      console.log('Search initialized successfully');
+  function renderResults(matches) {
+    if (matches.length === 0) {
+      resultsList.innerHTML = '<p class="col-span-full text-center text-stone-500 py-8">No recipes found. Try a different search term.</p>';
+      return;
+    }
+    resultsList.innerHTML = matches.map(recipe =>
+      `<a class="recipe md:hover:scale-105 md:hover:rotate-1 transition" href="${recipe.url}">
+        <canvas class="aspect-video w-full rounded-xl bg-gray-100 mb-1 bg-cover bg-center" style="background-image:url(${recipe.image});"></canvas>
+        <h1 class="font-semibold leading-tight">${recipe.title}</h1>
+      </a>`
+    ).join('');
+  }
 
+  function doSearch(query) {
+    if (!lunrIndex || !query.trim()) return;
+
+    let searchResults;
+    try {
+      // Try wildcard search first for partial matching
+      searchResults = lunrIndex.search(query.trim().split(/\s+/).map(t => t + '*').join(' '));
+    } catch (e) {
+      // Fall back to plain search if wildcard syntax fails
+      try {
+        searchResults = lunrIndex.search(query.trim());
+      } catch (e2) {
+        searchResults = [];
+      }
+    }
+
+    const matches = searchResults.map(result => {
+      return recipeData.find(r => r.id === result.ref);
+    }).filter(Boolean);
+
+    renderResults(matches);
+    showResults();
+  }
+
+  // Fetch the search index and build the Lunr index
+  fetch('{{site.baseurl}}/search.json')
+    .then(res => res.json())
+    .then(data => {
+      recipeData = data;
+
+      lunrIndex = lunr(function () {
+        this.ref('id');
+        this.field('title', { boost: 10 });
+        this.field('tags', { boost: 5 });
+        this.field('ingredients', { boost: 3 });
+        this.field('description');
+
+        data.forEach(recipe => {
+          this.add(recipe);
+        });
+      });
+
+      console.log('Lunr search initialized with', data.length, 'recipes');
+
+      // Handle ?tag= URL parameter
+      const params = new URLSearchParams(window.location.search);
+      const tag = params.get('tag');
       if (tag) {
         searchInput.value = tag;
-        setTimeout(() => {
-          simpleSearch.search(tag);
-          showResults();
-        }, 100);
+        doSearch(tag);
       }
-    },
+    })
+    .catch(err => console.error('Failed to load search index:', err));
+
+  // Search on typing
+  let debounceTimer;
+  searchInput.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    const query = searchInput.value.trim();
+    if (query.length === 0) {
+      hideResults();
+      return;
+    }
+    debounceTimer = setTimeout(() => doSearch(query), 150);
   });
 
-  // Event listener for clicking on suggested tags
+  // Suggestion pill clicks
   document.querySelectorAll('.suggestion').forEach(item => {
     item.addEventListener('click', function () {
-      searchInput.value = this.textContent;
-      simpleSearch.search(this.textContent);
-      showResults();
+      searchInput.value = this.textContent.trim();
+      doSearch(this.textContent.trim());
     });
   });
 
-  // Event listener for search input to show results on typing
-  searchInput.addEventListener('input', function() {
-    if (searchInput.value.length > 0) {
-      showResults();
-    }
-  });
-
-  // Event listener for toggling filters
+  // Toggle filters button
   filterButton.addEventListener('click', toggleFilters);
 });
-
-
-
 </script>
